@@ -35,7 +35,6 @@ int rangeMaxQuery(int qlow, int qhigh, int l, int r, int top) {
 		return MAXN ;
 	int mid = (l + r) / 2 ;
 	return (max(rangeMaxQuery(qlow, qhigh,l,mid,2*top+1),rangeMaxQuery(qlow, qhigh,mid+1,r,2*top+2))) ;
-	
 }
 
 void updateTree(int l,int r, int qlow, int qhigh, int top, int value) {
